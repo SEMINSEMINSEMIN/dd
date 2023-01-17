@@ -20,13 +20,33 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/Camera.js":
+/*!***********************!*\
+  !*** ./src/Camera.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var three__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! three */ \"./node_modules/three/build/three.module.js\");\n\n\nconst camera = new three__WEBPACK_IMPORTED_MODULE_0__.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );\n// 1. fov: filed of view that indicate how big is the angle of the camera.\n// 2. aspect: the proportion that have the height in relation to the width\n// 3, 4: how close and how far are the edges of the camera. the camera cannot see anything that is farther than 1000 meters or closer than 10 centimeters.\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (camera);\n\n//# sourceURL=webpack://webpack-tutorial/./src/Camera.js?");
+
+/***/ }),
+
+/***/ "./src/Scene.js":
+/*!**********************!*\
+  !*** ./src/Scene.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var three__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! three */ \"./node_modules/three/build/three.module.js\");\n\n\nconst scene = new three__WEBPACK_IMPORTED_MODULE_0__.Scene();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scene);\n\n//# sourceURL=webpack://webpack-tutorial/./src/Scene.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Box__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Box */ \"./src/Box.js\");\n\n\nconsole.log(_Box__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack://webpack-tutorial/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Box__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Box */ \"./src/Box.js\");\n/* harmony import */ var _Camera__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Camera */ \"./src/Camera.js\");\n/* harmony import */ var _Scene__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Scene */ \"./src/Scene.js\");\n\n\n\n\nconsole.log(_Box__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n_Scene__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\n_Camera__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\n\n//# sourceURL=webpack://webpack-tutorial/./src/index.js?");
 
 /***/ }),
 
