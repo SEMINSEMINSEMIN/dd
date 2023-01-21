@@ -5,7 +5,7 @@ class SceneDemoB extends MasterScene {
     open() {
         console.log(`the scene ${this.instanceName} is opening`);
         setTimeout(() => {
-            this.sceneHandler.goTo(sceneList.SceneDemoA);
+            this.sceneHandler.goTo(sceneList.sceneDemoA);
         }, 5000);
     }
 
