@@ -9,7 +9,7 @@ class KeyListener {
     }
 
     isPressed(keyCode) {
-        return this.keys[e.keyCode] ? this.keys[e.keyCode] : false;
+        return this.keys[keyCode] ? this.keys[keyCode] : false;
     }
 
     down(e) {

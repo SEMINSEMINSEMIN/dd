@@ -1,8 +1,12 @@
 import sceneList from "./scenesystem/demo/SceneList";
 import SceneHandler from "./scenesystem/SceneHandler";
 
-const sceneHandler = new SceneHandler(sceneList);
-sceneHandler.goTo(sceneList.sceneDemoA);
+Ammo().then(function (AmmoLib) {
+    Ammo = AmmoLib;
+    const sceneHandler = new SceneHandler(sceneList);
+    sceneHandler.goTo(sceneList.sceneDemoA);
+});
+
 // import * as THREE from "three";
 // import box from "./Box";
 // import camera from "./Camera";
@@ -22,8 +26,8 @@ sceneHandler.goTo(sceneList.sceneDemoA);
 // import mouse from "./Mouse";
 
 // // Object3D / Methods / .add (object: Object3D, ...) : this
-// /* 
-// Adds object as child of this object. An arbitrary(임의의) number of objects may be added. 
+// /*
+// Adds object as child of this object. An arbitrary(임의의) number of objects may be added.
 // Any current parent on an object passed in here will be removed, since an object can have at most one parent.
 // */
 // scene.add(axesHelper);

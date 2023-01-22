@@ -1,6 +1,6 @@
 import * as THREE from "three";
 
-const geometry = new THREE.BoxGeometry( 1, 1, 1 ); // width, height, depth
+const geometry = new THREE.BoxGeometry( .1, .1, .1 ); // width, height, depth
 
 // Material / MeshBasicMaterial
 // A material for drawing geometries in a simple shaded way. This material is not affected by lights.
